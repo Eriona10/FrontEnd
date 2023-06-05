@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import './App.css';
+import Role from "./Role/Role";
+import Register2 from "./Register/Register2";
+import Ushtrime from "./ushtrime";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   
+    
+    
+    <Router>
+        <Routes>
+        {/* <Route path='/' component={Home} exact/>
+     <Route path='/Login' component={Login} exact/> */}
+ 
+     {/* <Route path="/Register" element={<Register />} /> */}
+     <Route path="/Register2" element={<Register2/>} />
+     <Route path="/Role" element={<Role />} />
+     <Route path="/Ushtrime" element={<Ushtrime />} />
+    </Routes>
+      </Router>
+
+
+   
+</>
   );
 }
 
